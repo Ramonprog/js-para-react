@@ -1,8 +1,9 @@
 import './src/styles/settings/colors.css';
 import './src/styles/elements/base.css';
-import CardGame from './src/componets/CardGame/index.js';
+import BoardGame from './src/componets/objects/BoardGames';
 
 const $root = document.querySelector('#root');
-const $htmlCardGame = CardGame();
+const $htmlBoardGame = BoardGame(6)
 
-$root.insertAdjacentHTML('beforeend', $htmlCardGame)
+
+$root.insertAdjacentHTML('beforeend', $htmlBoardGame);
